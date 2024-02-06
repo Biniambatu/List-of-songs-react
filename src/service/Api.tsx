@@ -16,8 +16,8 @@ const Api = () => {
   }, []);
   return (
     <SimpleGrid column={3} spacing={1}>
-      {users.map((song) => (
-        <SongCard key={song.id} song={song} />
+      {users.map((songs) => (
+        <SongCard key={songs.id} songs={songs} />
       ))}
     </SimpleGrid>
   );
